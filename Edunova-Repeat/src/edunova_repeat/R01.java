@@ -1,4 +1,4 @@
-package eduova_repeat;
+package edunova_repeat;
 
 public class R01 {
 	
@@ -85,7 +85,7 @@ public class R01 {
 		
 		long broj4 = 500000000;
 		
-		// iako pise da bi trebalo biti 2 na 63 dobivam error ako dodam više 0 nego u int, a zbilja mi se ne da računati koji bi trebao biti max
+		// iako pise da bi trebalo biti 2 na 63 dobivam error ako dodam više 0 nego u int, a zbilja mi se ne da ra�?unati koji bi trebao biti max
 		
 		System.out.println(broj4);
 		

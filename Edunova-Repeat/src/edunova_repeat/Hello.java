@@ -1,4 +1,4 @@
-package eduova_repeat;
+package edunova_repeat;
 
 public class Hello {
 	public static void main(String[] args) {
