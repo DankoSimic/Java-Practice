@@ -76,7 +76,37 @@ public class Tasks02 {
 		// U odnosu na odabranu operaciju program ispisuje rezultat
 		// Ako je rezultat cijeli broj tada se ispisuje bez .0
 		
-		int g,h,i,j;
+		// NEEDS WORK
+		
+		int unos;
+		
+		unos = Integer.parseInt(JOptionPane.showInputDialog("Unesi operaciju. 1 - Zbrajanje 2 - Oduzimanje 3 - Množenje 4 - Djeljenje"));
+	
+		if (unos<1 && unos>4) {
+			System.out.println("Greška");
+		}
+		
+		double g,h ;
+		
+		g = Double.parseDouble(JOptionPane.showInputDialog("Unesi prvi decimalni broj"));
+		h = Double.parseDouble(JOptionPane.showInputDialog("Unesi drugi decimalni broj"));
+		
+		double operacija_zbrajanje, operacija_oduzimanje, operacija_mnozenje, operacija_djeljenje;
+		
+		operacija_zbrajanje = g+h;
+		operacija_oduzimanje = g-h;
+		operacija_mnozenje = g*h;
+		operacija_djeljenje = g/h;
+		
+		if (unos==1) { 
+			System.out.println(operacija_zbrajanje);
+		} else if (unos==2) {
+			System.out.println(operacija_oduzimanje);
+		} else if (unos==3) {
+			System.out.println(operacija_mnozenje);
+		} else if (unos==4) {
+			System.out.println(operacija_djeljenje);
+		}
 		
 		//
 		// Zadatak 5
