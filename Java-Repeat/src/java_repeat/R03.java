@@ -12,7 +12,7 @@ public class R03 {
 		
 		int f = d / e;
 		
-		int g = 8, h =16;
+		int g = 8, h = 16;
 		
 		int i = g / h;
 		
@@ -44,6 +44,8 @@ public class R03 {
 		System.out.println(10/3);
 		System.out.println(5*8);
 		System.out.println(10-7);
+		
+		// ostatak, korisno za par/nepar
 		
 		int y = 9 % 2;
 
