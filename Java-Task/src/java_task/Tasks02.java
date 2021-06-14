@@ -76,13 +76,33 @@ public class Tasks02 {
 		// U odnosu na odabranu operaciju program ispisuje rezultat
 		// Ako je rezultat cijeli broj tada se ispisuje bez .0
 		
+		int g,h,i,j;
+		
 		//
 		// Zadatak 5
 		// Program unosi dva cijela broja.
-		// U sluèaju da je zbroj unesenih brojeva veæi od 10 
+		// U slučaju da je zbroj unesenih brojeva veći od 10 
 		// i razlika prvog i drugog manja od 0 program ispisuje
-		// Osijek, inaèe ispisuje Donji Miholjac.
-
+		// Osijek, inaće ispisuje Donji Miholjac.
+		
+		int k,l;
+		
+		int operacija_zbroj;
+		int operacija_razlika;
+		
+		k = Integer.parseInt(JOptionPane.showInputDialog("Daj cijeli broj 1"));
+		l = Integer.parseInt(JOptionPane.showInputDialog("Daj cijeli broj 2"));
+		
+		operacija_zbroj = k + l;
+		operacija_razlika = k - l;
+		
+		if (operacija_zbroj>10 && operacija_razlika<0) {
+			System.out.println("Osijek");
+		} else  {
+			System.out.println("Donji Miholjac");
+		}
+		
+		
 		
 	}
 	
