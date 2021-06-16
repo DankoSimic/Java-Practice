@@ -26,7 +26,18 @@ public class MindExercise01 {
 		e = d * 2; // d = 2, e = 2 * 2, dakle e = 4 / OK
 		System.out.println(e);
 		System.out.println(--e+d--); // sad ide wild guess e=4,d=2 no e je umanjen za 1 prije zbroja dakle 5 // BINGO
-	
+		
+		System.out.println();
+		
+		int f=4, g=0;
+		g= ++f - 1; // g=4
+		System.out.println(g);
+		f= ++f - g--; // f = 5 - 3 odnosno f=2
+		System.out.println(f);
+		System.out.println(f*g); // 2 * 3 = 6 // YES. Ok ide brže
+		
+		System.out.println();
+		
 	}
 
 }
