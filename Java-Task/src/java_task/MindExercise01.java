@@ -38,6 +38,33 @@ public class MindExercise01 {
 		
 		System.out.println();
 		
+		int i=2, j=1;
+		j = --j; // j=0 / Ok
+		System.out.println(j);
+		i = ++i - j++ ; // i = 3 - 0 nakon čega je i=3 a j=1 / Ok
+		System.out.println(i);
+		System.out.println(i-j); // treba biti 2 / Ok
+		
+		System.out.println();		
+		
+		int k=3, l=1;
+		k = --k + --l; // k = 2 / OK
+		System.out.println(k);
+		l = --l +2; // l = 1 / OK
+		System.out.println(l);
+		k = ++k - ++l; // k= 3-2 = 1 / OK
+		System.out.println(k);
+		System.out.println(k*l); // 1*2 = 2 / OK
+		
+		System.out.println();
+		
+		int m=4, n=1;
+		m = m / ++n; // 4/2 m = 2
+		System.out.println(m);
+		n = ++m + ++n; // n = 3 + 3, n = 6
+		System.out.println(n);
+		System.out.println(n-m); // 6-3 = 3
+		
 	}
 
 }
