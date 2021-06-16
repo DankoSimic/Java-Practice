@@ -2,6 +2,8 @@ package java_task;
 
 import java.util.Arrays;
 
+import javax.swing.JOptionPane;
+
 public class Tasks03 {
 
 	public static void main(String[] args) {
@@ -52,6 +54,33 @@ public class Tasks03 {
 		} else if (broj[4]>broj[0]&broj[4]>broj[1]&broj[4]>broj[2]&broj[4]>broj[3]) {
 			System.out.println(broj[4]);
 		}
+		
+		System.out.println();
+		
+		//Korisnik unosi cijeli broj
+		//Program ispisuje broj 7 jedno ispod drugog
+		//onoliko puta koliko je korisnik unio
+		
+		// Ovo nije bilo rješenje, nadao sam se da će htjeti pri recimo upisu 4 ići od int = 0 do a=4
+		
+//		int a;
+//		
+//		a=Integer.parseInt(JOptionPane.showInputDialog("Unesi cijeli broj"));
+//		
+//		for(int i=0;a<10;i=i+1) {
+//			System.out.println("7");
+//		}
+		
+		// YES, evo rješenja
+		
+		int a;
+		
+		a=Integer.parseInt(JOptionPane.showInputDialog("Unesi cijeli broj, po mogućnosti jednoznamenkasti"));
+		
+		for(int i=1;i<=a;i=i+1) {
+			System.out.println("7");
+		}		
+					
 	}
 	
 }
