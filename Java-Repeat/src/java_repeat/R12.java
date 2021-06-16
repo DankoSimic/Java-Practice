@@ -43,6 +43,12 @@ public class R12 {
 		
 		// decrement po istom principu i-- i --i
 		
+		i=4;
+		System.out.println(--i); // tu bi trebalo odmah ispisati 3
+		System.out.println(i--); // tu bi trebalo ostati 3
+		System.out.println(i); // tu bi trebalo bit 2
+		
+		// Ok to sam isto skonto
 	}
 	
 }
