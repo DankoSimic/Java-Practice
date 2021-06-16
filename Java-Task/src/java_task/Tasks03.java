@@ -80,7 +80,16 @@ public class Tasks03 {
 		for(int i=1;i<=a;i=i+1) {
 			System.out.println("7");
 		}		
-					
+		
+		// program ispisuje sve parne brojeve od 1 do 55
+		// U petlji obavezno koristiti vrijednosti 1 i 55
+		
+		// Ovo bi bilo rješenje
+		
+		for (int i=1;i<=55;i=i+1) {
+			if (i % 2 == 0) {System.out.println(i);}
+		}
+	
 	}
 	
 }
