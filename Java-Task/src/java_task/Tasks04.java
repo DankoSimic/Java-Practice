@@ -34,7 +34,15 @@ public class Tasks04 {
 		// Program ispisuje sve brojeve od 100 do 21
 		// jedno do drugoga odvojeno zarezom
 		
+		// Nađi poslije za zarez
+		// Preumoran za noćni 
 		
+		int f,g;
+		f = 21;
+		g = 100;
+		
+		for (int i=g;i>=f;i--) {
+			System.out.println(i );}
 		
 	}
 
