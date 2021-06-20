@@ -65,6 +65,41 @@ public class MindExercise01 {
 		System.out.println(n);
 		System.out.println(n-m); // 6-3 = 3
 		
+		// 1d4 za operaciju. 1 zbrajanje 2 oduzimanje 3 množenje 4 djeljenje
+		// 1d6 za broj
+		// 1d6 za increment, decrement. 1(++i) 2(i) 3(i++) 4(--i) 5(i) 6(i--)
+		
+		System.out.println();
+		
+		int o=5, p=1;
+		o = o++ + p; // o = 5 + 1, o = 6
+		System.out.println(o); // OK
+		p = --p * ++o; // p = 0 * 7, p = 0
+		System.out.println(p); // OK
+		System.out.println(--o + --p); // 6 + -1
+		
+		System.out.println();
+		
+		int r=2, s=2;
+		s = --r * --s; // 1*1 s=1 , r=1
+		System.out.println(s); // OK
+		r = r-- * --s; // 1*0 r=0, s=0
+		System.out.println(r); // OK
+		s = --r + ++r; // -1 + 1 = 0 s=0, r=0 
+		System.out.println(r/s); // 0 OK
+		
+		System.out.println();
+		
+		int t=3, u=6;
+		t = --u - --t; // 5-2 t=3 , u=5
+		System.out.println(t); // OK
+		u = u++ - ++t; // 5 - 4, t=4, u=1
+		System.out.println(u); // OK
+		t = u++; // t=1, u=2
+		System.out.println(t); // OK
+		System.out.println(t/u); // 0 OK
+				
+		
 	}
 
 }
