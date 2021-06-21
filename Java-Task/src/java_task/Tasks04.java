@@ -45,11 +45,51 @@ public class Tasks04 {
 		
 		for (int i=g;i>=f;i--) {
 			System.out.println(i + "," );}
+			
+		// Zadatak 4
+		// Program učitava cijele brojeve od korisnika
+		// sve dok se ne učita broj 0. Tada se program završava
 		
-		// Zadatak 12
-		// Program ispisuje "Edunova" (ispisuju se i navodnici)
+		int k;
 		
-		System.out.println("\"Edunova\"");
+		for(;;) { k = Integer.parseInt(JOptionPane.showInputDialog("Unesi cijeli broj, program završava kad upišeš 0"));
+			if ( k == 0 )
+				break;
+		}
+		
+		// Zadatak 5
+		// Program od korisnika unosi dva parna broja
+		// Program ispisuje njohov zbroj
+		
+		int l,m;
+		
+		for (;;) { 
+			l = Integer.parseInt(JOptionPane.showInputDialog("Unesi paran broj"));
+			m = Integer.parseInt(JOptionPane.showInputDialog("Unesi drugi paran broj"));
+			if (l % 2 == 0 && m % 2 == 0) {
+				System.out.println(l+m);
+				break;
+			} else {JOptionPane.showInternalMessageDialog(null,"Nisi upisao parne brojeve");}
+			}
+
+		// Zadatak 6
+		// Program unosi 10 cijelih brojeva od korisnika
+		// u jednodimenzionalni niz
+		// Program ispisuje sve elemente niza
+		
+		// Zadatak 7
+		// Prim broj je broj koji je cjelobrojno djeljiv sam s sobom
+		// i s broj 1.
+		// Za uneseni broj x = 27353 ispišite da li je prim broj
+
+		// Zadatak 8
+		// Program ispisuje matricu 15 x 15
+		// tako da je svaki element matrice broj 0
+		
+		// Zadatak 9
+		//Program od korisnika unosi brojeve
+		// sve dok korisnik ne unese broj 0
+		//Program ispisuje zbroj svih unesenih brojeva
 		
 		// Zadatak 10
 		// Ispiši Sve parne brojeve od 3 do 47
@@ -64,16 +104,25 @@ public class Tasks04 {
 			}
 		}
 		
-		// Zadatak 4
-		// Program učitava cijele brojeve od korisnika
-		// sve dok se ne učita broj 0. Tada se program završava
+		// Zadatak 11
+		// Za dva dana broja ispišite decimalni dio rezultata
+		// djeljenja
 		
-		int k;
+		// treba još dio za decimalno - NOT DONE
 		
-		for(;;) { k = Integer.parseInt(JOptionPane.showInputDialog("Unesi cijeli broj, program završava kad upišeš 0"));
-			if ( k == 0 )
-				break;
-		}
+		double n,o,p;
+		n = Double.parseDouble(JOptionPane.showInputDialog("Unesi broj"));
+		o = Double.parseDouble(JOptionPane.showInputDialog("Unesi drugi broj"));
+		p = (n/o);
+		
+		System.out.println(p);
+		
+		// Zadatak 12
+		// Program ispisuje "Edunova" (ispisuju se i navodnici)
+		
+		System.out.println("\"Edunova\"");
+		
+		
 			}
 		}
 
